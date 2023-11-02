@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Gift For Kak Inas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+  </head>
+  <body>
+    <div id="foto" class="foto" style="display: none">
+      <div class="image">
+        <!-- Foto Kamu --><img
+          id="ftKm"
+          src="https://dc547.4shared.com/img/UZgp9e9ffa/s25/18b7ef20098/1_online"
+          width="100px"
+          height="100px"
+        />
+        <!-- Foto Aku --><img
+          id="ftAk"
+          style="opacity: 0; position: absolute"
+          src="https://i.postimg.cc/KzDsjRjc/FB-IMG-16354292358400063.jpg"
+          width="100px"
+          height="100px"
+        />
+      </div>
+      <!-- Nama Kamu --><span id="sp1"
+        ><b id="namamu"></b>
+        <div
+          id="lope"
+          style="
+            display: inline-block;
+            align-items: center;
+            justify-content: center;
+          "
+        >
+          &#9829;
+        </div></span
+      >
+      <div id="sp2" style="display: none">
+        <span style="font-size: 13px" id="text3"></span>
+      </div>
+      <div id="sp3" style="display: none"><span id="text4"></span></div>
+    </div>
+
+    <div id="Content" style="display: none">
+      <div class="kolomteks">
+        <p id="text"></p>
+        <p style="font-size: 0.8rem" id="text2"></p>
+      </div>
+    </div>
+
+    <video autoplay loop muted playsinline id="video-background">
+      <source id="video-source" src="" type="video/mp4" />
+    </video>
+
+    <script src="script.js"></script>
+    <script type="text/javascript">
+      var author = "Aku";
+      var today = new Date();
+      var date =
+        today.getDate() +
+        "/" +
+        (today.getMonth() + 1) +
+        "/" +
+        today.getFullYear() +
+        ".";
+      var dateTime = date;
+      var swals = Swal;
+      async function mulai() {
+        // Mengganti input nama dengan "Inas Farhanah"
+        window.nama = "Kak Inas";
+
+        text2 = "Dari: " + author + ", untuk: " + window.nama + ".";
+        text4 = "I Love U, " + window.nama + "!";
+
+        await swals.fire(`Hai, ${nama}!`);
+        play();
+        await swals.fire(`Second Gift 😂 `);
+        await swals.fire(`I Hope You Like It `);
+        vidPlay();
+        ketik();
+        showDiv();
+        showFt();
+        document.getElementById("namamu").innerHTML =
+          "Halo, " + window.nama + "!";
+      }
+      mulai();
+    </script>
+    <script>
+      var i = 0,
+        text;
+      text =
+        "Bahkan gula pun akan kalah manisnya ketika kak Inas tersenyum 😁.";
+      var u = 0,
+        text2; //Text2 ada di if(nama)
+      var o = 0,
+        text3;
+      text3 = "Lihat ini sayang..";
+      var a = 0,
+        text4; //Text4 ada di if(nama)
+    </script>
+  </body>
+</html>
